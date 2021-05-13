@@ -10,10 +10,10 @@ package device
 /* Fit within memory limits for iOS's Network Extension API, which has stricter requirements */
 
 const (
-	QueueStagedSize            = 128
-	QueueOutboundSize          = 1024
-	QueueInboundSize           = 1024
-	QueueHandshakeSize         = 1024
+	QueueStagedSize            = 64
+	QueueOutboundSize          = 64
+	QueueInboundSize           = 64
+	QueueHandshakeSize         = 64
 	MaxSegmentSize             = 1700
-	PreallocatedBuffersPerPool = 1024
+	PreallocatedBuffersPerPool = 64
 )
